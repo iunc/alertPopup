@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alert Popup Box</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <a href="#" class="click">Click me</a>
+    <div class="popup-box">
+        <i class="fas fa-exclamation"></i>
+        <h1>Your account will be deleted Permanently!</h1>
+        <label for="">Are you sure to proceed?</label>
+        <div class="btns">
+            <a href="#" class="btn1">Cancel Proceed</a>
+            <a href="#" class="btn2">Delete Account</a>
+        </div>
+    </div>
+    <script>
+        var click = document.querySelector('.click');
+        var popup = document.querySelector('.popup-box');
+        var btn1 = document.querySelector('.btn1');
+        var btn2 = document.querySelector('.btn2');
+
+        click.addEventListener('click', unhide);
+        btn1.addEventListener('click', hide);
+        btn2.addEventListener('click', thongBao);
+
+        function unhide() {
+            popup.style.opacity = "1";
+            popup.style.pointerEvents = "auto";
+        }
+        function hide() {
+            popup.style.opacity = "0";
+            popup.style.pointerEvents = "none";
+        }
+        function thongBao() {
+            alert('Your account deleted successfully.');
+            popup.style.opacity = "0";
+            popup.style.pointerEvents = "none";
+            click.innerHTML = 'Account Deleted';
+        }
+    </script>
+</body>
+
+</html>

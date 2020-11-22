@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  user-select: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Noto Sans TC", sans-serif;
+  background: #dedede;
+}
+body .click {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #2981bc;
+  color: white;
+  font-family: arial;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px 15px;
+  border: 1px solid #0059b3;
+  border-radius: 5px;
+}
+body .popup-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 5px;
+  width: 400px;
+  background: #f2f2f2;
+  text-align: center;
+  padding: 40px;
+  border: 1px solid #b3b3b3;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  z-index: 9999;
+  pointer-events: none;
+  transition: all 0.3 ease-in-out;
+}
+body .popup-box i {
+  font-size: 60px;
+  color: orange;
+  border: 5px solid orange;
+  border-radius: 50%;
+  margin: -10px 0 20px 0;
+  padding: 20px 40px;
+}
+body .popup-box h1 {
+  font-size: 25px;
+  color: black;
+  margin-bottom: 5px;
+}
+body .popup-box label {
+  font-size: 18px;
+  color: grey;
+}
+body .popup-box .btns {
+  margin-top: 40px;
+}
+body .popup-box .btns .btn1,
+body .popup-box .btns .btn2 {
+  background: grey;
+  color: white;
+  font-size: 13px;
+  padding: 10px 13px;
+  border: 1px solid #808080;
+  border-radius: 5px;
+  transition: all 0.5s;
+}
+body .popup-box .btns .btn1:hover {
+  background: #8c8c8c;
+}
+body .popup-box .btns .btn2 {
+  background: red;
+  margin-left: 20px;
+  border: 1px solid #cc0000;
+}
+body .popup-box .btns .btn2:hover {
+  background: #e60000;
+}
+
+/*# sourceMappingURL=style.css.map */
